@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="834.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.SearchFriendListItemController">
+   <children>
+      <TextField layoutX="86.0" layoutY="642.0" />
+      <TextField layoutX="427.0" layoutY="574.0" />
+      <TextField layoutX="86.0" layoutY="574.0" />
+      <TextField layoutX="427.0" layoutY="642.0" />
+      <TextField layoutX="86.0" layoutY="389.0" prefHeight="151.0" prefWidth="583.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutY="388.0" stroke="BLACK" strokeType="INSIDE" width="777.0" />
+   </children>
+</AnchorPane>

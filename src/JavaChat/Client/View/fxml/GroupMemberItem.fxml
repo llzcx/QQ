@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="108.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.GroupMemberItemController">
+   <children>
+      <Button disable="true" mnemonicParsing="false" prefHeight="111.0" prefWidth="497.0" style="-fx-background-color: TRANSPARENT; -fx-border-color: BLACK;" />
+      <ImageView fx:id="Head_ImageView" fitHeight="111.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="SetADMINISTRATORS_Button" layoutX="365.0" layoutY="14.0" mnemonicParsing="false" onAction="#SetADMINISTRATORS" onMouseDragEntered="#Agree_ButtonColorEnter" onMouseDragExited="#Agree_ButtonColorExited" onMouseEntered="#Agree_ButtonColorEnter" onMouseExited="#Agree_ButtonColorExited" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #37ff00;" text="设为管理员" textFill="WHITE">
+         <effect>
+            <DropShadow color="#0000008b" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <Button fx:id="MoveOutGroup_Button" layoutX="365.0" layoutY="61.0" mnemonicParsing="false" onAction="#MoveOutGroup" onMouseDragEntered="#Reject_ButtonColorEnter" onMouseDragExited="#Reject_ButtonColorExited" onMouseEntered="#Reject_ButtonColorEnter" onMouseExited="#Reject_ButtonColorExited" prefHeight="36.0" prefWidth="118.0" style="-fx-background-color: #ec521e;" text="踢出群聊" textFill="WHITE">
+         <effect>
+            <DropShadow color="#0000008b" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <Label fx:id="Name_Label" layoutX="159.0" layoutY="44.0" prefHeight="24.0" prefWidth="203.0" style="-fx-text-fill: BLACK;" text="Label" />
+      <Label fx:id="AccountNumber_Label" layoutX="159.0" layoutY="79.0" prefHeight="24.0" prefWidth="203.0" style="-fx-text-fill: BLACK;" text="Label" />
+      <Label fx:id="GroupIdentity_Label" layoutX="114.0" layoutY="14.0" prefHeight="24.0" prefWidth="67.0" style="-fx-background-color: GREEN; -fx-text-fill: WHITE; -fx-background-radius: 25;" text="Label" textFill="#fffff2" />
+      <Label layoutX="107.0" layoutY="79.0" style="-fx-text-fill: BLACK;" text="账号" />
+      <Label layoutX="107.0" layoutY="46.0" style="-fx-text-fill: BLACK;" text="名字" />
+   </children>
+</AnchorPane>

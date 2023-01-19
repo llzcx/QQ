@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="372.0" style="-fx-background-color: #3EFFDC;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.GroupApplicationController">
+   <children>
+      <Label layoutX="40.0" layoutY="18.0" prefHeight="40.0" prefWidth="293.0" text="GROUPApplication">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="GroupApplication_ListView" layoutY="91.0" prefHeight="411.0" prefWidth="376.0" />
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="347.0" layoutY="4.0">
+         <image>
+            <Image url="@Image/quit1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Close_Button" layoutX="340.0" layoutY="2.0" mnemonicParsing="false" onAction="#CloseGroupApplication" prefHeight="13.0" prefWidth="36.0" style="-fx-background-color: TRANSPARENT;" />
+      <Label fx:id="ErrorTip_Label" prefHeight="24.0" prefWidth="317.0" textFill="RED" />
+   </children>
+</AnchorPane>

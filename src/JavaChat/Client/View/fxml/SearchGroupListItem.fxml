@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="120.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.SearchGroupListItemController">
+   <children>
+      <Label fx:id="Name" layoutX="129.0" layoutY="21.0" prefHeight="40.0" prefWidth="257.0" text="Label" textFill="#0dff00" />
+      <Label fx:id="GroupNumber" layoutX="130.0" layoutY="60.0" prefHeight="40.0" prefWidth="257.0" text="Label" textFill="RED" />
+      <Button id="back" fx:id="Add_Button" layoutX="411.0" layoutY="41.0" mnemonicParsing="false" onAction="#AddThisGroup" onMouseEntered="#EnterColor_Add_Button" onMouseExited="#ExitColor_Add_Button" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #48bcff;" text="添加" textFill="#fff6f6">
+         <effect>
+            <DropShadow color="#0000009c" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <ImageView fx:id="HeadPortrait" fitHeight="120.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

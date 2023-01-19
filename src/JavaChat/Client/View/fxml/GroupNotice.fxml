@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="488.0" prefWidth="372.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.GroupNoticeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3c9df8" height="84.0" stroke="BLACK" strokeType="INSIDE" width="376.0" />
+      <Label layoutX="83.0" layoutY="18.0" prefHeight="40.0" prefWidth="293.0" text="GroupNotice">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="GroupNotice_ListView" layoutY="84.0" prefHeight="404.0" prefWidth="376.0" style="-fx-background-color: TRANSPARENT;" />
+      <ImageView fitHeight="21.0" fitWidth="22.0" layoutX="347.0" layoutY="4.0">
+         <image>
+            <Image url="@Image/quit1.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Close_Button" layoutX="340.0" layoutY="2.0" mnemonicParsing="false" onAction="#Closely" prefHeight="21.0" prefWidth="36.0" style="-fx-background-color: TRANSPARENT;" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="129.0" prefWidth="375.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.GroupApplicationItemController">
+   <children>
+      <Label fx:id="State_Label" layoutX="134.0" layoutY="57.0" prefHeight="24.0" prefWidth="241.0" style="-fx-text-fill: BLACK;" text="State" />
+      <Button fx:id="Agree_Button" layoutX="169.0" layoutY="83.0" mnemonicParsing="false" onAction="#AgreeGroupApplication" onMouseDragEntered="#Agree_ButtonColorEnter" onMouseDragExited="#Agree_ButtonColorExited" onMouseEntered="#Agree_ButtonColorEnter" onMouseExited="#Agree_ButtonColorExited" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #37ff00;" text="同意" textFill="WHITE">
+         <effect>
+            <DropShadow color="#0000008b" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <Button fx:id="Reject_Button" layoutX="255.0" layoutY="83.0" mnemonicParsing="false" onAction="#RejectGroupApplication" onMouseDragEntered="#Reject_ButtonColorEnter" onMouseDragExited="#Reject_ButtonColorExited" onMouseEntered="#Reject_ButtonColorEnter" onMouseExited="#Reject_ButtonColorExited" prefHeight="32.0" prefWidth="70.0" style="-fx-background-color: #ec521e;" text="拒绝" textFill="WHITE">
+         <effect>
+            <DropShadow color="#0000008b" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <Label fx:id="GroupNumber_Label" layoutX="134.0" layoutY="8.0" prefHeight="24.0" prefWidth="241.0" style="-fx-text-fill: BLACK;" text="GroupNumber_Label" />
+      <Rectangle fx:id="Cover_Rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="48.0" layoutX="151.0" layoutY="77.0" stroke="WHITE" strokeType="INSIDE" visible="false" width="195.0" />
+      <ImageView fx:id="HeadPortrait" fitHeight="129.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="Sender_Label" layoutX="134.0" layoutY="33.0" prefHeight="24.0" prefWidth="241.0" style="-fx-text-fill: BLACK;" />
+   </children>
+</AnchorPane>

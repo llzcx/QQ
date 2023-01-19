@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.LoginController">
+   <children>
+      <ImageView fitHeight="408.0" fitWidth="600.0" layoutY="-7.0">
+         <image>
+            <Image url="@Image/Login_text.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="94.0" fitWidth="93.0" layoutX="249.0" layoutY="48.0">
+         <image>
+            <Image url="@Image/qq.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="AccountNumber_TextField" layoutX="155.0" layoutY="165.0" onKeyReleased="#KeyReleasedAccountReleased_PasswordField" prefHeight="36.0" prefWidth="321.0" promptText="输入账号" />
+      <Button fx:id="Login_Button" alignment="CENTER" cacheHint="SCALE" layoutX="217.0" layoutY="309.0" mnemonicParsing="false" onAction="#CreatMainCore" onMouseEntered="#But_ColorEnter" onMouseExited="#But_ColorExited" prefHeight="44.0" prefWidth="138.0" style="-fx-background-color: #48bcff;" text="登录" textFill="WHITE" />
+      <PasswordField fx:id="AccountPassword_TextField" layoutX="154.0" layoutY="224.0" onKeyReleased="#KeyReleasedPasswordReleased_PasswordField" prefHeight="36.0" prefWidth="321.0" promptText="输入密码" />
+      <Label layoutX="108.0" layoutY="171.0" text="账号">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Label layoutX="108.0" layoutY="228.0" text="密码">
+         <font>
+            <Font size="19.0" />
+         </font></Label>
+      <Button fx:id="Register_Button" layoutX="154.0" layoutY="261.0" mnemonicParsing="false" onAction="#CreatRegister" style="-fx-background-color: TRANSPARENT;" text="注册账号">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="441.0" layoutY="171.0">
+         <image>
+            <Image url="@Image/24gl-ejectDown.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="436.0" layoutY="166.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="11.0" style="-fx-background-color: TRANSPARENT;" />
+      <Button fx:id="RetrievePassword_Button" layoutX="315.0" layoutY="261.0" mnemonicParsing="false" onAction="#CreatRetrievePassword" style="-fx-background-color: TRANSPARENT;" text="忘记密码？">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="78.0" layoutX="522.0" layoutY="-7.0">
+         <image>
+            <Image url="@Image/返回.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="LoginClose_Button" layoutX="531.0" layoutY="-4.0" mnemonicParsing="false" onAction="#closely" prefHeight="70.0" prefWidth="68.0" style="-fx-background-color: TRANSPARENT;" />
+      <Label fx:id="LoginErrorTip_Label" layoutX="217.0" layoutY="353.0" prefHeight="24.0" prefWidth="138.0" textFill="RED" />
+      <Label fx:id="PasswordErrorTip_Label" layoutX="155.0" layoutY="201.0" prefHeight="24.0" prefWidth="321.0" textFill="RED" />
+      <Label fx:id="AccountErrorTip_Label" layoutX="155.0" layoutY="142.0" prefHeight="24.0" prefWidth="321.0" textFill="RED" />
+      <Button fx:id="Login1_Button" layoutX="20.0" layoutY="13.0" mnemonicParsing="false" onAction="#Login1" prefHeight="1.0" prefWidth="154.0" style="-fx-background-color: TRANSPARENT; -fx-underline: true;" text="一键登录账号1" />
+      <Button fx:id="Login2_Button" layoutX="20.0" layoutY="49.0" mnemonicParsing="false" onAction="#Login2" prefHeight="36.0" prefWidth="154.0" style="-fx-background-color: TRANSPARENT; -fx-underline: true;" text="一键登录账号2" />
+      <Button fx:id="Login3_Button" layoutX="20.0" layoutY="85.0" mnemonicParsing="false" onAction="#Login3" prefHeight="36.0" prefWidth="154.0" style="-fx-background-color: TRANSPARENT; -fx-underline: true;" text="一键登录账号3" />
+      <Button fx:id="Login4_Button" layoutX="20.0" layoutY="124.0" mnemonicParsing="false" onAction="#Login4" prefHeight="36.0" prefWidth="154.0" style="-fx-background-color: TRANSPARENT; -fx-underline: true;" text="一键登录账号4" />
+   </children>
+</AnchorPane>

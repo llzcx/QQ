@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="129.0" prefWidth="432.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.GroupNoticeItemController">
+   <children>
+      <Label fx:id="GroupNumber" layoutX="140.0" layoutY="89.0" prefHeight="24.0" prefWidth="279.0" style="-fx-text-fill: BLACK;" text="GroupNumber" />
+      <Label fx:id="Event" layoutX="140.0" layoutY="53.0" prefHeight="24.0" prefWidth="279.0" style="-fx-text-fill: BLACK;" text="Event" />
+      <ImageView fx:id="ActiveHeadPortrait" fitHeight="129.0" fitWidth="125.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

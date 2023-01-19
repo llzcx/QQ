@@ -1,0 +1,64 @@
+.ListItem{
+    -fx-background-color: rgba(0, 0, 0, 0);
+    -fx-text-fill:black;
+}
+.pane{
+    -fx-background-radius: 10px;
+    -fx-background-color: rgba(255, 255, 255, 0);
+}
+#ChatList .list-cell {
+    -fx-background-color: transparent;
+}
+#ChatList
+{
+    -fx-background-color:transparent;
+}
+.lefttext{
+    -fx-control-inner-background: #81e76c;
+    -fx-control-inner-radius:5px;
+    -fx-background-color: #81e76c;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #81e76c;
+    -fx-font-size: 15px;
+    -fx-font-family: "Forte";
+    -fx-font-style: italic;
+    -fx-text-fill:black;
+}
+.righttext{
+    -fx-control-inner-background: #7dc5eb;
+    -fx-control-inner-radius:5px;
+    -fx-background-color: #7dc5eb;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: #7dc5eb;
+    -fx-font-size: 15px;
+    -fx-font-family: "Forte";
+    -fx-font-style: italic;
+    -fx-text-fill:black;
+
+}
+.leftarrow{
+
+    -fx-background-image: url("Icon/left.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+
+}
+.rightarrow{
+    -fx-background-image: url("Icon/right.png");
+    -fx-background-size: 20px 20px;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+.AgreeFile{
+    -fx-background-size: 20px 20px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #40e220;
+}
+.RejectFile{
+    -fx-background-size: 20px 20px;
+    -fx-background-color: transparent;
+    -fx-text-fill: #f36464;
+}

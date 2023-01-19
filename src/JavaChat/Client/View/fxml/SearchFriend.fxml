@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="SearchFriend" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="JavaChat.Client.View.SearchFriendController">
+   <children>
+      <TextField id="textInput" fx:id="AccountNumber_TextField" layoutX="14.0" layoutY="59.0" prefHeight="38.0" prefWidth="354.0" promptText="请输入好友账号">
+         <padding>
+            <Insets left="32.0" />
+         </padding></TextField>
+      <ListView id="friendList" fx:id="SearchFriendList_ListView" layoutX="6.0" layoutY="104.0" prefHeight="240.0" prefWidth="585.0" />
+      <Label layoutX="7.0" layoutY="13.0" prefHeight="46.0" prefWidth="224.0" style="-fx-background-color: TRANSPARENT;" text="Search For Friend :">
+         <font>
+            <Font name="Forte" size="25.0" />
+         </font>
+      </Label>
+      <Button id="back" fx:id="Search_Button" layoutX="394.0" layoutY="58.0" mnemonicParsing="false" onAction="#Query" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #48bcff;" text="查询" textFill="#fff6f6">
+         <effect>
+            <DropShadow color="#0000009c" height="11.0" radius="5.0" width="11.0" />
+         </effect>
+      </Button>
+      <ImageView fitHeight="52.0" fitWidth="57.0" layoutX="543.0">
+         <image>
+            <Image url="@Image/返回.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Close_Button" layoutX="543.0" mnemonicParsing="false" onAction="#Closely" prefHeight="52.0" prefWidth="57.0" style="-fx-background-color: TRANSPARENT;" />
+      <Label fx:id="AddFriendErrorTip_Label" layoutX="208.0" layoutY="36.0" prefHeight="24.0" prefWidth="315.0" textFill="RED" />
+   </children>
+</Pane>
